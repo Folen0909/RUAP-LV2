@@ -28,7 +28,7 @@ $(function()
         });
         });
         $('#saveContact').click(function () {
-            $.post("api/contact",
+            $.post("/api/contact",
                 $("#saveContactForm").serialize(),
                 function (value) {
                     $('#contacts').append('<li>' + value.Name + '</li>');
